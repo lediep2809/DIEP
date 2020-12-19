@@ -1,0 +1,310 @@
+.content {
+  width: 100%;
+  padding-top: 60px;
+  background-color: #e4efe9;
+}
+
+/* Introduction */
+.content .introduction {
+  height: calc(100vh - 48px);
+  width: 1140px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.content .introduction .intro-text {
+  float: left;
+  width: 50%;
+  height: 40vh;
+  border-bottom: 1px solid #2b5876;
+}
+
+.content .introduction .intro-text h1 {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 30vh;
+  font-size: 30px;
+  font-family: GoogleSans-Bold;
+}
+
+.content .introduction .intro-text p {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  font-size: 16px;
+}
+
+.content .introduction .intro-img {
+  float: right;
+  width: 50%;
+  height: 70vh;
+  background-image: url("../../../content/img/intro-girl-thinking.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content .introduction .intro-redirect-btn {
+  float: left;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 30vh;
+}
+.content .introduction .intro-redirect-btn button {
+  background-color: #e4efe9;
+  margin-right: 12px;
+  border-radius: 10px;
+}
+.content .introduction .intro-redirect-btn button:hover {
+  background-color: #b5beb9;
+}
+.content .introduction .intro-redirect-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.content .introduction .intro-contact {
+  float: left;
+  width: 100%;
+  height: calc(30vh - 48px);
+  border-bottom: 1px solid #2b5876;
+}
+
+.content .introduction .intro-contact p {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  font-size: 16px;
+}
+
+.content .introduction .intro-contact a {
+  display: flex;
+  width: 75px;
+  height: calc(20vh - 60px);
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url("../../../content/icon/facebook.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: width 0.5s;
+}
+.content .introduction .intro-contact a:hover {
+  width: 100px;
+}
+
+/* Rent room */
+.content .rent-room {
+  width: 1140px;
+  padding: 0 12px;
+  margin: 0 auto;
+  border-bottom: 1px solid #2b5876;
+}
+
+.room-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.room-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.room-grid .rooms {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 6px;
+  width: 330px;
+  height: 400px;
+  margin: 16px 0;
+  cursor: pointer;
+  border: 1px solid #34568b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: box-shadow, 0.5s;
+}
+.room-grid .rooms:hover {
+  box-shadow: 10px 10px #aaaaaa;
+}
+.room-grid .rooms button {
+  cursor: pointer;
+  border: none;
+  background-color: #34568b;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 8px 16px;
+}
+.room-grid .rooms button:hover {
+  background-color: #ff703cc0;
+}
+
+#rent-room-1,
+#rent-room-2,
+#rent-room-3,
+#rent-room-4,
+#rent-room-5,
+#rent-room-6 {
+  display: none;
+}
+
+.room-paging {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 200px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.room-paging .prev-page,
+.room-paging .next-page,
+.room-paging .number-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.room-paging .prev-page:hover,
+.room-paging .next-page:hover,
+.room-paging .number-page:hover {
+  background-color: #b5beb9;
+}
+
+.room-paging .prev-page {
+  background-image: url("../../../content/icon/previous.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.room-paging .next-page {
+  background-image: url("../../../content/icon/next.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Share room */
+.content .share-room {
+  width: 1140px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+/* Media Queries */
+/* Phone */
+@media screen and (max-width: 640px) {
+  .content {
+    width: 100vw;
+    padding-top: 35vh;
+  }
+
+  /* Introduction */
+  .content .introduction {
+    height: calc(100vh - 40vh);
+    width: 100vw;
+  }
+
+  .content .introduction .intro-text h1 {
+    font-size: 18px;
+  }
+
+  .content .introduction .intro-text p {
+    font-size: 14px;
+  }
+
+  .content .introduction .intro-redirect-btn {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .introduction .intro-redirect-btn button {
+    margin-top: 12px;
+  }
+  .content .introduction .intro-redirect-btn a {
+    width: 150px;
+  }
+
+  .content .introduction .intro-contact a:hover {
+    width: 80px;
+  }
+
+  /* Rent room */
+  .content .rent-room {
+    width: 100vw;
+  }
+
+  .room-grid {
+    justify-content: space-evenly;
+  }
+
+  /* Share room */
+  .content .share-room {
+    width: 100vw;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .content {
+    width: 100vw;
+    padding-top: 55vh;
+  }
+
+  /* Introduction */
+  .content .introduction {
+    height: calc(100vh - 52vh);
+    width: 100vw;
+  }
+
+  .content .introduction .intro-text h1 {
+    font-size: 26px;
+  }
+
+  .content .introduction .intro-text p {
+    font-size: 14px;
+  }
+
+  .content .introduction .intro-redirect-btn {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .introduction .intro-redirect-btn button {
+    margin-top: 12px;
+  }
+  .content .introduction .intro-redirect-btn a {
+    width: 150px;
+  }
+
+  .content .introduction .intro-contact a:hover {
+    width: 80px;
+  }
+
+  /* Rent room */
+  .content .rent-room {
+    width: 100vw;
+  }
+
+  .room-grid {
+    justify-content: space-evenly;
+  }
+
+  /* Share room */
+  .content .share-room {
+    width: 100vw;
+  }
+}

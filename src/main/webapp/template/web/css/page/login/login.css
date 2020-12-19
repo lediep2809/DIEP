@@ -1,0 +1,140 @@
+body {
+  background-color: #e4efe9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #ffffff;
+  height: 60vh;
+  border-radius: 5px;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h1 {
+  display: flex;
+  width: 95%;
+  height: 96px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #34568b;
+  margin: 0 auto;
+}
+
+.container .logo-brand {
+  float: left;
+  display: flex;
+  width: 50%;
+  height: calc(60vh - 96px);
+  padding: 60px 0 0 60px;
+}
+.container .logo-brand .logo {
+  width: 120px;
+  height: 120px;
+  background-image: url("../../../content/img/R4R.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container .logo-brand .brand {
+  padding-top: 30px;
+  font-family: GoogleSans-Bold;
+  font-size: 36px;
+  color: #34568b;
+}
+
+.container .info {
+  float: left;
+  width: 50%;
+  height: calc(60vh - 160px);
+  display: flex;
+  flex-direction: column;
+  padding: 60px 60px 0 60px;
+  border-bottom: 1px solid #34568b;
+}
+.container .info .phone {
+  height: 60px;
+  padding-bottom: 24px;
+}
+.container .info .phone .phone-icon {
+  display: flex;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../../content/icon/phone.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container .info .password {
+  height: 60px;
+  padding-bottom: 24px;
+}
+.container .info .password .password-icon {
+  display: flex;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../../content/icon/password.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container .info label {
+  float: left;
+  width: 100%;
+  font-size: 15px;
+  padding-bottom: 3px;
+}
+.container .info input {
+  float: left;
+  width: calc(100% - 36px);
+  height: 90%;
+  padding: 6px 12px;
+  border: 0;
+  margin-left: 6px;
+  border-bottom: 1px solid #34568b;
+}
+
+.container .info button {
+  width: 100px;
+  padding: 10px;
+  align-self: center;
+  margin-top: 24px;
+  background-color: #34568b;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.container .info button:hover {
+  background-color: #ff703cc0;
+}
+
+.container .redirect {
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  height: 64px;
+  display: flex;
+  padding: 12px 60px 0 60px;
+  font-size: 15px;
+}
+
+/* Common */
+a {
+  text-decoration: none;
+  color: #0056e0;
+}
+a:hover {
+  color: #34568b;
+}
+label {
+  visibility: hidden;
+}
+/* .info:focus-within label {
+  visibility: visible;
+} */

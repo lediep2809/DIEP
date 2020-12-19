@@ -1,0 +1,185 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  width: 100%;
+  height: 200px;
+  color: white;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+/* Left side */
+.footer .footer-logo-slogan {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-logo-slogan .footer-logo-box {
+  display: flex;
+  width: 100%;
+  height: 150px;
+}
+
+.footer .footer-logo-slogan .footer-logo-box .footer-logo {
+  display: flex;
+  background-image: url("../../../content/img/R4R.png");
+  width: 100px;
+  height: 150px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer .footer-logo-slogan .footer-logo-box .footer-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  font-size: 40px;
+  font-family: GoogleSans-Bold;
+}
+
+.footer .footer-logo-slogan .footer-slogan {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+}
+
+/* Mid side */
+.footer .footer-info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.footer .footer-info h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer .footer-info .footer-contact a {
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url("../../../content/icon/facebook.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: width 0.5s;
+}
+.footer .footer-info .footer-contact a:hover {
+  width: 100px;
+}
+
+/* Right side */
+.footer .footer-name {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-family: GoogleSans-Bold;
+  font-size: 20px;
+}
+
+/* Responsive */
+/* Media Queries */
+/* Phone */
+@media screen and (max-width: 640px) {
+  .footer {
+    padding: 0;
+    width: 100vw;
+  }
+
+  /* Left side */
+  .footer .footer-logo-slogan .footer-logo-box {
+    height: 100px;
+  }
+
+  .footer .footer-logo-slogan .footer-logo-box .footer-logo {
+    width: 50px;
+    height: 100px;
+  }
+
+  .footer .footer-logo-slogan .footer-logo-box .footer-brand {
+    height: 100px;
+    font-size: 20px;
+  }
+
+  .footer .footer-logo-slogan .footer-slogan {
+    font-size: 13px;
+  }
+
+  /* Mid side */
+  .footer .footer-info h4 {
+    font-size: 16px;
+  }
+
+  .footer .footer-info .team-info {
+    font-size: 11px;
+  }
+
+  .footer .footer-info .footer-contact a {
+    width: 50px;
+    height: 50px;
+  }
+  .footer .footer-info .footer-contact a:hover {
+    width: 60px;
+  }
+
+  /* Right side */
+  .footer .footer-name {
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .footer {
+    padding: 0;
+    width: 100vw;
+  }
+
+  /* Left side */
+  .footer .footer-logo-slogan .footer-logo-box {
+    height: 125px;
+  }
+
+  .footer .footer-logo-slogan .footer-logo-box .footer-logo {
+    width: 75px;
+    height: 125px;
+  }
+
+  .footer .footer-logo-slogan .footer-logo-box .footer-brand {
+    height: 125px;
+    font-size: 30px;
+  }
+
+  .footer .footer-logo-slogan .footer-slogan {
+    font-size: 16px;
+  }
+
+  /* Mid side */
+  .footer .footer-info h4 {
+    font-size: 20px;
+  }
+
+  .footer .footer-info .team-info {
+    font-size: 13px;
+  }
+
+  .footer .footer-info .footer-contact a {
+    width: 60px;
+    height: 60px;
+  }
+  .footer .footer-info .footer-contact a:hover {
+    width: 75px;
+  }
+
+  /* Right side */
+  .footer .footer-name {
+    font-size: 16px;
+  }
+}
